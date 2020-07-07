@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { HtmlInTsComponent } from './html-in-ts/html-in-ts.component';
+import { SucFailComponent } from './suc-fail/suc-fail.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { HtmlInTsComponent } from './html-in-ts/html-in-ts.component';
     ServerComponent,
     ServersComponent,
     HtmlInTsComponent,
+    SucFailComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
