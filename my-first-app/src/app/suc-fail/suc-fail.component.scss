@@ -1,0 +1,14 @@
+.suc {
+  border: 2px solid green;
+  padding: 25px 10px;
+  background-color: lightgreen;
+  width: 300px;
+  text-align: center;
+}
+.fail {
+  border: 2px solid red;
+  padding: 25px 10px;
+  background-color: rgba($color: red, $alpha: 0.3);
+  width: 300px;
+  text-align: center;
+}
