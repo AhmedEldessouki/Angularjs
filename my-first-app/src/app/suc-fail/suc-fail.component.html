@@ -1,2 +1,10 @@
-<h1 class="suc">success</h1>
-<h1 class="fail">failure</h1>
+<button class="btn btn-primary" (click)="onToggle()">
+  Toggle Me
+</button>
+<h1 class="suc" *ngIf="showSucFail">success</h1>
+<h1 class="fail" *ngIf="!showSucFail">failure</h1>
+<div *ngFor="let logItem of log">
+  <p>
+    {{ logItem }}
+  </p>
+</div>
