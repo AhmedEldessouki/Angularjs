@@ -12,6 +12,6 @@ export class SucFailComponent {
   // tslint:disable-next-line: typedef
   onToggle() {
     this.showSucFail = !this.showSucFail;
-    this.log.push(this.log.length + 1);
+    this.log.push(new Date());
   }
 }
