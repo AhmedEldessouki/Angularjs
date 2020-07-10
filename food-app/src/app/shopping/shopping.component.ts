@@ -1,11 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ShoppingListEditComponent } from './shopping-list-edit/shopping-list-edit.component';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
-import { IngredientComponent } from './ingredient/ingredient.component';
-
-// ShoppingListEditComponent,
-// ShoppingListComponent,
-// IngredientComponent,
 
 @Component({
   selector: 'app-shopping',
