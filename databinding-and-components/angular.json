@@ -30,7 +30,6 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
-              "node_modules/tether/dist/js/tether.js",
               "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
@@ -120,5 +119,8 @@
       }
     }
   },
-  "defaultProject": "databinding-and-components"
+  "defaultProject": "databinding-and-components",
+  "cli": {
+    "analytics": "fddb0ff4-9afc-4b21-81b6-aa5ef32d95d2"
+  }
 }
