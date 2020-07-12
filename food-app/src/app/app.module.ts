@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShoppingListEditComponent } from './shopping/shopping-list/shopping-list-edit/shopping-list-edit.component';
 import { ShoppingListComponent } from './shopping/shopping-list/shopping-list.component';
@@ -25,8 +25,8 @@ import { ShoppingComponent } from './shopping/shopping.component';
     RecipeListComponent,
     RecipeItemComponent,
     RecipeDetailsComponent,
-    RecipeComponent,
     ShoppingComponent,
+    RecipeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
