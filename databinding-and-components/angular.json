@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "food-app": {
+    "databinding-and-components": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/food-app",
+            "outputPath": "dist/databinding-and-components",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -30,7 +30,6 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
-              "node_modules/tether/dist/js/tether.js",
               "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
@@ -68,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "food-app:build"
+            "browserTarget": "databinding-and-components:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "food-app:build:production"
+              "browserTarget": "databinding-and-components:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "food-app:build"
+            "browserTarget": "databinding-and-components:build"
           }
         },
         "test": {
@@ -109,19 +108,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "food-app:serve"
+            "devServerTarget": "databinding-and-components:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "food-app:serve:production"
+              "devServerTarget": "databinding-and-components:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "food-app",
+  "defaultProject": "databinding-and-components",
   "cli": {
-    "analytics": "19f7b8c3-d4b3-4df9-8ad6-22f3566b87b5"
+    "analytics": "fddb0ff4-9afc-4b21-81b6-aa5ef32d95d2"
   }
 }
