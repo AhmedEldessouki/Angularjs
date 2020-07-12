@@ -3,9 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { CockpitComponent } from './cockpit/cockpit.component';
+import { ElementComponent } from './element/element.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CockpitComponent, ElementComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

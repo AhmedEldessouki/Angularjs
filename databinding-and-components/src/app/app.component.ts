@@ -7,25 +7,27 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'databinding-and-components';
-  serverElements = [];
-  newServerName = '';
-  newServerContent = '';
-
+  serverElements = [
+    { type: 'server', name: 'Mocha', content: 'mabdooooooooon' },
+  ];
   // tslint:disable-next-line: typedef
-  onAddServer() {
+  onServerAdded(serverData: { serverName: string; serverContent: string }) {
     this.serverElements.push({
       type: 'server',
-      name: this.newServerName,
-      content: this.newServerContent,
+      name: serverData.serverName,
+      content: serverData.serverContent,
     });
   }
 
   // tslint:disable-next-line: typedef
-  onAddBlueprint() {
+  onBlueprintAdded(bluePrintData: {
+    serverName: string;
+    serverContent: string;
+  }) {
     this.serverElements.push({
       type: 'blueprint',
-      name: this.newServerName,
-      content: this.newServerContent,
+      name: bluePrintData.serverName,
+      content: bluePrintData.serverContent,
     });
   }
 }
