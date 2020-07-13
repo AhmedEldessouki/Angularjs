@@ -1,3 +1,4 @@
+import { RecipeItemComponent } from './recipe/recipe-list/recipe-item/recipe-item.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -14,32 +15,12 @@ const routes: Routes = [
     path: 'recipe',
     component: RecipeComponent,
   },
-  {
-    path: 'recipe/:id',
-    component: RecipeComponent,
-    children: [
-      {
-        path: 'recipeList',
-        component: RecipeListComponent,
-      },
-      { path: 'recipedetails', component: RecipeDetailsComponent },
-    ],
-  },
+
   {
     path: 'shopping',
     component: ShoppingComponent,
   },
-  {
-    path: 'shopping/:id',
-    component: ShoppingComponent,
-    children: [
-      {
-        path: 'ShoppingList',
-        component: ShoppingListComponent,
-      },
-      { path: 'shopping list edit', component: ShoppingListEditComponent },
-    ],
-  },
+
   { path: '**', redirectTo: '/' },
 ];
 
