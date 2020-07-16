@@ -30,6 +30,6 @@ export class ShoppingListEditComponent implements OnInit {
     const newIngredient = new Ingredient(ingName, ingAmount, ingImgPath);
     this.ingredientAdd.emit(newIngredient);
   }
-  onAddRemove(): void {}
+  onRemove(): void {}
   onAddEdit(): void {}
 }
